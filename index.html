@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta id="siteThemeColor" name="theme-color" content="#e8e4ff" />
+    <title>PERMADEVV — digital store</title>
+    <meta id="siteDescription" name="description" content="Toko layanan digital dan produk pilihan." />
+    <link id="siteFavicon" rel="icon" hidden />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" id="siteBrand" href="#beranda" data-view-link="home" aria-label="PERMADEVV Beranda">
+        <span class="brand-icon" id="brandFallback" aria-hidden="true">▣</span>
+        <img class="brand-logo" id="brandLogo" alt="" hidden />
+        <span class="brand-copy"><strong id="siteName">PERMADEVV</strong><small id="siteTagline">digital store</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="header-menu" id="navMenu" aria-label="Menu utama">
+        <button type="button" data-view-link="home">Beranda</button>
+        <button type="button" data-view-link="shop">Shop</button>
+        <button type="button" data-view-link="upload">Upload</button>
+        <button type="button" data-view-link="chat">Chat</button>
+        <button type="button" data-view-link="profile">Profil</button>
+      </nav>
+    </header>
+
+    <main class="app-main">
+      <section class="page-view is-active" id="homeView" data-page="home" aria-labelledby="homeTitle">
+        <div class="home-hero">
+          <div class="hero-copy">
+            <p class="eyebrow" id="heroEyebrow">TOKO DIGITAL</p>
+            <h1 id="homeTitle">Temukan sesuatu yang terasa pas.</h1>
+            <p class="hero-description" id="heroDescription">Layanan digital pilihan untuk kebutuhanmu.</p>
+            <div class="hero-actions">
+              <button class="button button-yellow" type="button" data-view-link="shop">Buka shop <span aria-hidden="true">↗</span></button>
+              <button class="button button-paper" type="button" data-view-link="upload">Upload file <span aria-hidden="true">↑</span></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid" aria-label="Statistik toko">
+          <article class="stat-card">
+            <strong>1.2k+</strong>
+            <span>Pesanan selesai</span>
+          </article>
+          <article class="stat-card">
+            <strong>24/7</strong>
+            <span>Service support</span>
+          </article>
+          <article class="stat-card">
+            <strong>99%</strong>
+            <span>Tingkat kepuasan</span>
+          </article>
+        </div>
+
+        <section class="home-section available-section" aria-labelledby="availableTitle">
+          <div class="section-title-row">
+            <h2 id="availableTitle">Yang tersedia di shop</h2>
+            <button class="text-button" type="button" data-view-link="shop">Lihat semua produk <span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="featured-list">
+            <article class="featured-row">
+              <div><h3>Nomor Kosong</h3><p>Nomor pilihan untuk kebutuhan dan identitas digitalmu.</p></div>
+              <button class="underlined-link" type="button" data-view-link="shop" data-category-link="number">Lihat di shop</button>
+            </article>
+            <article class="featured-row">
+              <div><h3>Layanan SMM</h3><p>Layanan sosial media untuk akun dan konten pilihanmu.</p></div>
+              <button class="underlined-link" type="button" data-view-link="shop" data-category-link="smm">Lihat di shop</button>
+            </article>
+          </div>
+        </section>
+
+        <section class="home-feature" aria-labelledby="featureTitle">
+          <div class="feature-message">
+            <p class="eyebrow">Pilih yang kamu butuhkan</p>
+            <h2 id="featureTitle">Untuk ide yang ingin tumbuh pelan-pelan.</h2>
+            <p>Pilih satu hal yang membantu harimu terasa lebih ringan.</p>
+            <button class="button button-ink" type="button" data-view-link="shop">Jelajahi koleksi <span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="feature-art" aria-label="Ilustrasi abstrak toko digital" role="img">
+            <div class="art-orbit"></div><div class="art-spark">✳</div><div class="art-object"><span id="artBrandName">PERMADEVV</span><br /><span>digital goods</span></div>
+          </div>
+        </section>
+
+        <section class="home-section benefit-section" aria-labelledby="benefitTitle">
+          <div class="section-title-row">
+            <h2 id="benefitTitle">Kenapa pelanggan memilih kami</h2>
+          </div>
+          <div class="benefit-grid">
+            <article class="info-card">
+              <span>01</span>
+              <h3>Proses cepat</h3>
+              <p>Alur belanja dan checkout dibuat sederhana agar kamu tidak perlu repot memikirkan detail teknis.</p>
+            </article>
+            <article class="info-card">
+              <span>02</span>
+              <h3>Transaksi jelas</h3>
+              <p>Setiap saldo, order, dan status pemenuhan tampil di akun supaya riwayat tetap terpantau.</p>
+            </article>
+            <article class="info-card">
+              <span>03</span>
+              <h3>Dukungan aktif</h3>
+              <p>Tim siap membantu melalui service center untuk menjawab pertanyaan sebelum dan sesudah pembelian.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="home-section tools-section" aria-labelledby="toolsTitle">
+          <h2 id="toolsTitle">Selain shop</h2>
+          <div class="tool-list">
+            <button class="tool-row" type="button" data-view-link="upload">
+              <span><strong>Upload file</strong><small>Unggah gambar, video, atau dokumen untuk mendapatkan link.</small></span><span class="row-arrow">↗</span>
+            </button>
+            <button class="tool-row" type="button" data-view-link="chat">
+              <span><strong>Service Center</strong><small>Tempat bertanya tentang pesanan dan layanan.</small></span><span class="row-arrow">↗</span>
+            </button>
+            <button class="tool-row" type="button" data-view-link="shop">
+              <span><strong>Nomor kosong & SMM</strong><small>Lihat kategori dan pilih produk dari katalog.</small></span><span class="row-arrow">↗</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="how-section" aria-labelledby="howTitle">
+          <p class="eyebrow">Belanja sederhana</p>
+          <h2 id="howTitle">Mulai dari akun, selesai di pesanan.</h2>
+          <div class="steps-list">
+            <article><span>1</span><div><h3>Buat akun</h3><p>Daftar dengan email aktif dan kata sandi agar saldo serta pesanan tersimpan di akun.</p></div></article>
+            <article><span>2</span><div><h3>Pilih produk</h3><p>Jelajahi kategori dan pilih nomor kosong atau layanan SMM.</p></div></article>
+            <article><span>3</span><div><h3>Konfirmasi pesanan</h3><p>Gunakan saldo untuk membuat pesanan. Status pemenuhan tampil di riwayat akun.</p></div></article>
+          </div>
+          <button class="button button-yellow" type="button" data-view-link="shop">Mulai belanja <span aria-hidden="true">↗</span></button>
+        </section>
+
+        <section class="home-section faq-section" aria-labelledby="faqTitle">
+          <h2 id="faqTitle">Sebelum kamu membeli</h2>
+          <p class="faq-intro">Belum terjawab? Buka <button class="inline-link" type="button" data-view-link="chat">Service Center</button>.</p>
+          <div class="faq-list">
+            <details><summary>Apakah harus login untuk berbelanja?</summary><p>Katalog bisa dilihat tanpa login. Untuk membeli, memakai saldo, atau membuka Profil, kamu harus masuk atau mendaftar.</p></details>
+            <details><summary>Bagaimana cara pembayarannya?</summary><p>Pilih nominal isi saldo di Profil, lalu bayar invoice QRIS sebelum kedaluwarsa. Saldo masuk setelah pembayaran terverifikasi.</p></details>
+            <details><summary>Berapa lama pesanan diproses?</summary><p>Durasi mengikuti provider dan baru dapat dipastikan setelah API provider tersambung.</p></details>
+            <details><summary>Bagaimana jika saya butuh bantuan?</summary><p>Gunakan menu Chat untuk melihat informasi bantuan dan pilihan kontak.</p></details>
+          </div>
+        </section>
+
+        <section class="collection-section" aria-labelledby="collectionTitle">
+          <h2 id="collectionTitle">Koleksi untuk menemani</h2>
+          <div class="collection-grid">
+            <article class="collection-card">
+              <div class="collection-art art-number"><span>08</span><small>SIM NUMBER</small></div>
+              <div><h3>Yang terasa kamu</h3><p>Pilihan nomor yang bisa mendukung identitas digital dan kebutuhanmu.</p></div>
+            </article>
+            <article class="collection-card">
+              <div class="collection-art art-smm"><span>↗</span><small>SOCIAL MEDIA</small></div>
+              <div><h3>Detail kecil yang berarti</h3><p>Proses sederhana, status jelas, dan dukungan saat dibutuhkan.</p></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="cta-banner" aria-label="Ajakan pembelian">
+          <div>
+            <p class="eyebrow">Siap mulai?</p>
+            <h2>Jelajahi katalog dan pilih produk yang paling cocok.</h2>
+          </div>
+          <button class="button button-paper" type="button" data-view-link="shop">Lihat katalog <span aria-hidden="true">↗</span></button>
+        </section>
+      </section>
+
+      <section class="page-view shop-view" id="shopView" data-page="shop" aria-labelledby="shopTitle">
+        <div class="page-heading">
+          <p class="eyebrow">Pilih yang kamu cari</p>
+          <h1 id="shopTitle">Shop</h1>
+          <p>Nomor kosong dan layanan sosial media pilihan.</p>
+        </div>
+        <div class="catalog-toolbar">
+          <div class="catalog-tabs" role="group" aria-label="Filter kategori produk">
+            <button class="catalog-tab active" type="button" data-category="all" aria-pressed="true">Semua</button>
+            <button class="catalog-tab" type="button" data-category="number" aria-pressed="false">Nomor Kosong</button>
+            <button class="catalog-tab" type="button" data-category="smm" aria-pressed="false">Layanan SMM</button>
+          </div>
+          <label class="catalog-search"><span aria-hidden="true">⌕</span><input id="catalogSearch" type="search" placeholder="Cari produk..." aria-label="Cari produk" /></label>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite"><p class="catalog-message">Memuat katalog produk...</p></div>
+        <p class="catalog-note" id="catalogNote"></p>
+      </section>
+
+      <section class="page-view" id="uploadView" data-page="upload" aria-labelledby="uploadTitle">
+        <div class="page-heading">
+          <p class="eyebrow">Tools</p><h1 id="uploadTitle">Upload file</h1>
+          <p>Pilih file dari perangkat untuk melihat detail file. Penyimpanan dan pembuatan link belum aktif sebelum layanan upload backend dihubungkan.</p>
+        </div>
+        <div class="upload-panel">
+          <div class="upload-icon" aria-hidden="true">↑</div>
+          <h2>Unggah file kamu</h2>
+          <p>Gambar, video, atau dokumen • Maksimal 10 MB untuk demo ini.</p>
+          <label class="button button-yellow file-picker" for="uploadFile">Pilih file</label>
+          <input id="uploadFile" type="file" accept="image/*,video/*,.pdf,.txt,.zip" />
+          <div class="upload-result" id="uploadResult" aria-live="polite">Belum ada file dipilih.</div>
+          <p class="notice">File tidak dikirim atau disimpan ke server. Integrasi API upload belum tersedia.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="info-card">
+            <span>01</span>
+            <h3>Pilih file</h3>
+            <p>Unggah berkas dari perangkat dengan cepat tanpa harus meninggalkan halaman.</p>
+          </article>
+          <article class="info-card">
+            <span>02</span>
+            <h3>Detail jelas</h3>
+            <p>Ukuran, jenis, dan status file tampil rapi agar proses review lebih mudah.</p>
+          </article>
+          <article class="info-card">
+            <span>03</span>
+            <h3>Siap kembangkan</h3>
+            <p>Area ini siap dihubungkan ke backend upload saat fitur penyimpanan aktif.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-view" id="chatView" data-page="chat" aria-labelledby="chatTitle">
+        <div class="page-heading">
+          <p class="eyebrow">Kami siap membantu</p><h1 id="chatTitle">Service Center</h1>
+          <p>Informasi dan bantuan tentang katalog maupun proses pesanan.</p>
+        </div>
+        <div class="service-center-card">
+          <span class="service-icon">?</span>
+          <h2>Ada yang bisa kami bantu?</h2>
+          <p id="supportMessage">Tambahkan kontak CS pada konfigurasi toko.</p>
+          <a class="button button-ink" id="supportWhatsApp" href="#" target="_blank" rel="noreferrer" hidden>Hubungi WhatsApp <span aria-hidden="true">↗</span></a>
+          <a class="button button-paper" id="supportEmail" href="#" hidden>Email CS</a>
+        </div>
+
+        <div class="support-grid" aria-label="Pilihan dukungan">
+          <article class="info-card">
+            <span>WA</span>
+            <h3>WhatsApp</h3>
+            <p>Fast response untuk pertanyaan seputar katalog, order, dan pembaruan status pesanan.</p>
+          </article>
+          <article class="info-card">
+            <span>FAQ</span>
+            <h3>Panduan</h3>
+            <p>Informasi umum tentang cara beli, saldo, dan proses pengiriman layanan sudah dirangkum di sini.</p>
+          </article>
+          <article class="info-card">
+            <span>24h</span>
+            <h3>Respon</h3>
+            <p>Area ini siap diisi dengan kontak resmi agar pelanggan dapat menghubungi bisnis Anda dengan mudah.</p>
+          </article>
+        </div>
+
+        <div class="faq-list chat-faq">
+          <details><summary>Apakah pesanan langsung diproses?</summary><p>Belum untuk saat ini. API provider masih perlu dikonfigurasi.</p></details>
+          <details><summary>Apakah katalog sudah real-time?</summary><p>Belum. Jika dibuka tanpa backend, produk yang terlihat adalah katalog contoh.</p></details>
+          <details><summary>Bagaimana kalau butuh bantuan setelah checkout?</summary><p>Kamu dapat menghubungi service center atau membuka riwayat akun untuk melihat status pesanan yang sedang berjalan.</p></details>
+        </div>
+      </section>
+
+      <section class="page-view" id="profileView" data-page="profile" aria-labelledby="profileTitle">
+        <div class="page-heading">
+          <p class="eyebrow">Akun kamu</p><h1 id="profileTitle">Profil</h1>
+          <p id="profileSubtitle">Saldo, pesanan, dan pengaturan akun.</p>
+        </div>
+
+        <div class="profile-summary-grid" aria-label="Ringkasan profil">
+          <article class="info-card compact">
+            <span>Saldo</span>
+            <h3 id="profileBalanceSummary">Rp0</h3>
+            <p>Jumlah uang yang siap dipakai untuk checkout.</p>
+          </article>
+          <article class="info-card compact">
+            <span>Pending</span>
+            <h3 id="profilePendingSummary">0</h3>
+            <p>Permintaan top-up yang sedang menunggu verifikasi.</p>
+          </article>
+          <article class="info-card compact">
+            <span>Order</span>
+            <h3 id="profileOrderSummary">0</h3>
+            <p>Pesanan aktif dan riwayat pemesanan yang tercatat.</p>
+          </article>
+        </div>
+
+        <section class="profile-guest" id="profileGuest">
+          <div class="profile-card">
+          <div class="profile-avatar">P</div>
+          <div><h2>Belum masuk</h2><p>Masuk atau daftar untuk melihat profil dan mengelola saldo.</p></div>
+          <span class="guest-badge">Tamu</span>
+          </div>
+          <div class="auth-actions">
+            <button class="button button-yellow" type="button" data-open-auth="login">Masuk</button>
+            <button class="button button-paper" type="button" data-open-auth="register">Daftar</button>
+          </div>
+        </section>
+        <section class="profile-account" id="profileAccount" hidden>
+          <div class="profile-card account-card">
+            <div class="profile-avatar" id="profileAvatar">P</div>
+            <div><h2 id="profileName">Akun</h2><p id="profileEmail"></p></div>
+            <button class="text-button logout-button" type="button" id="logoutButton">Keluar</button>
+          </div>
+          <div class="wallet-card">
+            <div><span>Saldo tersedia</span><strong id="walletBalance">Rp0</strong></div>
+            <button class="button button-yellow" type="button" id="openTopup">+ Isi saldo</button>
+          </div>
+          <p class="notice wallet-notice">Bayar invoice QRIS sebelum kedaluwarsa. Saldo masuk otomatis setelah pembayaran terverifikasi.</p>
+          <section class="account-section">
+            <h2>Riwayat isi saldo</h2>
+            <div class="account-list" id="topupHistory"><p class="empty-state">Belum ada permintaan isi saldo.</p></div>
+          </section>
+          <section class="account-section">
+            <h2>Riwayat pesanan</h2>
+            <p class="form-status" id="orderStatusMessage" role="status" aria-live="polite"></p>
+            <div class="account-list" id="orderHistory"><p class="empty-state">Belum ada pesanan.</p></div>
+          </section>
+          <section class="account-section">
+            <h2>Mutasi saldo</h2>
+            <div class="account-list" id="walletHistory"><p class="empty-state">Belum ada transaksi saldo.</p></div>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p id="footerSocialLabel" hidden>Ikuti kami:</p>
+      <nav class="footer-socials" id="footerSocials" aria-label="Media sosial" hidden></nav>
+      <strong id="footerBrand">PERMADEVV digital store</strong>
+      <div><button type="button" data-open-auth="login">Masuk</button><button type="button" data-open-auth="register">Daftar</button><button type="button" data-view-link="chat">Service Center</button></div>
+      <small>© <span id="year"></span> <span id="footerCopyright">PERMADEVV</span></small>
+    </footer>
+
+    <nav class="bottom-nav" aria-label="Navigasi dashboard">
+      <button class="bottom-nav-item is-current" type="button" data-view-link="home" aria-current="page"><span class="nav-icon">⌂</span><span>Beranda</span></button>
+      <button class="bottom-nav-item" type="button" data-view-link="shop"><span class="nav-icon">▤</span><span>Shop</span></button>
+      <button class="bottom-nav-item" type="button" data-view-link="upload"><span class="nav-icon">↑</span><span>Upload</span></button>
+      <button class="bottom-nav-item" type="button" data-view-link="chat"><span class="nav-icon">☏</span><span>Chat</span></button>
+      <button class="bottom-nav-item" type="button" data-view-link="profile"><span class="nav-icon">♙</span><span>Profil</span></button>
+    </nav>
+
+    <dialog class="account-dialog" id="authDialog" aria-labelledby="authTitle">
+      <form class="account-form" id="authForm">
+        <button class="dialog-close" type="button" data-close-dialog="authDialog" aria-label="Tutup">×</button>
+        <p class="eyebrow">Akun <span id="authBrandName">PERMADEVV</span></p>
+        <h2 id="authTitle">Masuk</h2>
+        <div class="auth-switch">
+          <button type="button" class="auth-mode is-active" data-auth-mode="login">Masuk</button>
+          <button type="button" class="auth-mode" data-auth-mode="register">Daftar</button>
+        </div>
+        <a class="google-login" href="/api/auth/google"><span class="google-mark" aria-hidden="true">G</span>Masuk dengan Google</a>
+        <div class="form-field" id="authNameField" hidden>
+          <label for="authName">Nama</label>
+          <input id="authName" name="name" type="text" minlength="2" maxlength="80" autocomplete="name" />
+        </div>
+        <div class="form-field">
+          <label for="authEmail">Email</label>
+          <input id="authEmail" name="email" type="email" maxlength="254" autocomplete="email" required />
+        </div>
+        <div class="form-field">
+          <label for="authPassword">Kata sandi</label>
+          <input id="authPassword" name="password" type="password" minlength="8" maxlength="128" autocomplete="current-password" required />
+          <small id="passwordHint">Minimal 8 karakter.</small>
+        </div>
+        <p class="form-status" id="authStatus" role="status" aria-live="polite"></p>
+        <button class="button button-yellow form-submit" type="submit" id="authSubmit">Masuk</button>
+      </form>
+    </dialog>
+
+    <dialog class="account-dialog" id="topupDialog" aria-labelledby="topupTitle">
+      <form class="account-form" id="topupForm">
+        <button class="dialog-close" type="button" data-close-dialog="topupDialog" aria-label="Tutup">×</button>
+        <p class="eyebrow">Dompet digital</p>
+        <h2 id="topupTitle">Isi saldo dengan QRIS</h2>
+        <div id="topupCreateFields">
+          <p class="dialog-description">Pilih nominal saldo. Nominal pembayaran dapat mencakup biaya gateway; saldo yang masuk sesuai nominal pilihan.</p>
+          <label for="topupAmount">Nominal isi saldo</label>
+          <select id="topupAmount" name="amount" required>
+            <option value="10000">Rp10.000</option>
+            <option value="25000">Rp25.000</option>
+            <option value="50000">Rp50.000</option>
+            <option value="100000">Rp100.000</option>
+            <option value="250000">Rp250.000</option>
+            <option value="500000">Rp500.000</option>
+          </select>
+          <p class="form-status" id="topupStatus" role="status" aria-live="polite"></p>
+          <button class="button button-yellow form-submit" type="submit" id="topupSubmit">Buat invoice QRIS</button>
+        </div>
+        <section class="topup-payment" id="topupPayment" hidden aria-label="Pembayaran QRIS">
+          <img id="topupQrImage" alt="Kode QRIS untuk pembayaran isi saldo" />
+          <div><span>Total pembayaran</span><strong id="topupPaymentTotal">Rp0</strong></div>
+          <p id="topupExpiry"></p>
+          <p class="form-status" id="topupPaymentStatus" role="status" aria-live="polite"></p>
+          <button class="button button-yellow form-submit" type="button" id="topupCheck">Cek pembayaran</button>
+        </section>
+      </form>
+    </dialog>
+
+    <dialog class="order-dialog" id="orderDialog" aria-labelledby="orderTitle">
+      <form class="order-form" id="orderForm">
+        <button class="dialog-close" type="button" id="closeOrder" aria-label="Tutup">×</button>
+        <p class="eyebrow">Checkout</p><h2 id="orderTitle">Buat pesanan</h2>
+        <p class="dialog-description">Sewa nomor diproses otomatis melalui SMSCode. Nomor dan OTP tersedia di riwayat pesanan; setelah kode digunakan, tandai pesanan selesai.</p>
+        <label for="orderProduct">Produk</label><select id="orderProduct" name="productId" required></select>
+        <label for="customerName">Nama</label><input id="customerName" name="customerName" type="text" maxlength="80" autocomplete="name" required />
+        <label for="customerPhone">Nomor WhatsApp</label><input id="customerPhone" name="customerPhone" type="tel" maxlength="20" autocomplete="tel" placeholder="08xxxxxxxxxx" required />
+        <div id="targetField" hidden><label for="orderTarget">Link akun/target</label><input id="orderTarget" name="target" type="url" maxlength="500" placeholder="https://..." /></div>
+        <div id="smmFields" hidden>
+          <label for="orderQuantity">Jumlah</label><input id="orderQuantity" name="quantity" type="number" min="1" step="1" />
+          <label for="orderUsername">Username (jika diminta layanan)</label><input id="orderUsername" name="username" type="text" maxlength="100" />
+          <label for="orderComments">Komentar (jika diminta layanan)</label><textarea id="orderComments" name="comments" maxlength="5000" rows="4"></textarea>
+        </div>
+        <p class="order-total" id="orderTotal"></p><p class="order-status" id="orderStatus" role="status" aria-live="polite"></p>
+        <button class="button button-yellow order-submit" type="submit" id="submitOrder">Kirim Pesanan</button>
+      </form>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>

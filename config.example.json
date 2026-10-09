@@ -1,0 +1,66 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8000,
+    "nodeEnv": "development"
+  },
+  "admin": {
+    "topupKey": ""
+  },
+  "provider": {
+    "apiUrl": "https://pusatpanelsmm.com/api/json.php",
+    "apiKey": "",
+    "secretKey": "",
+    "timeoutMs": 20000,
+    "markupPercent": 0
+  },
+  "smscode": {
+    "apiUrl": "https://api.smscode.gg",
+    "timeoutMs": 15000,
+    "countryId": 7,
+    "markupPercent": 0
+  },
+  "payment": {
+    "apiUrl": "https://payment.dongtube.cyou",
+    "apiKey": "",
+    "timeoutMs": 15000
+  },
+  "site": {
+    "name": "PERMADEVV",
+    "tagline": "digital store",
+    "description": "Toko layanan digital dan produk pilihan.",
+    "logoUrl": "",
+    "faviconUrl": "",
+    "logoAlt": "",
+    "themeColor": "#e8e4ff",
+    "accentColor": "#ffdc43",
+    "heroEyebrow": "TOKO DIGITAL",
+    "heroTitle": "Temukan sesuatu yang terasa pas.",
+    "heroDescription": "Layanan digital pilihan untuk kebutuhanmu.",
+    "contact": {
+      "whatsappNumber": "",
+      "whatsappMessage": "Halo, saya perlu bantuan terkait pesanan.",
+      "email": "",
+      "supportMessage": "Hubungi kami melalui kontak resmi berikut."
+    },
+    "social": {
+      "tiktokUrl": "",
+      "instagramUrl": "",
+      "facebookUrl": ""
+    }
+  },
+  "auth": {
+    "google": {
+      "clientId": "",
+      "clientSecret": "",
+      "redirectUri": "http://localhost:8000/api/auth/google/callback",
+      "authorizationUrl": "https://accounts.google.com/o/oauth2/v2/auth",
+      "tokenUrl": "https://oauth2.googleapis.com/token",
+      "userInfoUrl": "https://openidconnect.googleapis.com/v1/userinfo",
+      "timeoutMs": 15000
+    }
+  },
+  "storage": {
+    "directory": "data"
+  }
+}
